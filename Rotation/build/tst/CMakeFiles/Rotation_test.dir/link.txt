@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/Rotation_test.dir/main.cpp.o CMakeFiles/Rotation_test.dir/matrix2x2-test.cpp.o CMakeFiles/Rotation_test.dir/rectangle-tst.cpp.o CMakeFiles/Rotation_test.dir/vector2D-test.cpp.o  -o Rotation_test  ../libRotation_lib.a ../lib/libgtest.a -lpthread 
