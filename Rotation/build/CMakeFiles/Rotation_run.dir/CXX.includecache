@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/Matrix2x2.h
+Vector2D.h
+../inc/Vector2D.h
+
+../inc/Rectangle.h
+Matrix2x2.h
+../inc/Matrix2x2.h
+
+../inc/Vector2D.h
+cmath
+-
+iostream
+-
+fstream
+-
+
+../lib/GNUPlot/lacze_do_gnuplota.hh
+string
+-
+list
+-
+vector
+-
+
+/home/chilon/Pobrane/zad3/Rotation/src/main.cpp
+Rectangle.h
+-
+Matrix2x2.h
+-
+lacze_do_gnuplota.hh
+/home/chilon/Pobrane/zad3/Rotation/src/lacze_do_gnuplota.hh
+
+/home/chilon/Pobrane/zad3/Rotation/src/rectangle.cpp
+Rectangle.h
+/home/chilon/Pobrane/zad3/Rotation/src/Rectangle.h
+
