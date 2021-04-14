@@ -1,4 +1,3 @@
-Stworzyć folder lib <br>
 W lib sklonować:<br>
 git clone https://github.com/google/googletest.git<br>
 potem w głównym folderze<br>
