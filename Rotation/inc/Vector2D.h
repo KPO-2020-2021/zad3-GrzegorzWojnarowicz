@@ -6,7 +6,7 @@
 #ifndef ROTATION_VECTOR2D_H
 #define ROTATION_VECTOR2D_H
 
-#define THRESHOLD 0.000001
+#define THRESHOLD 0.00000000001
 
 class Vector2D {
 private:
@@ -22,6 +22,7 @@ public:
     friend std::ostream &operator<<(std::ostream &ost, const Vector2D &v1);         //allows to print vector on std::ostream 
     friend std::istream &operator>>(std::istream &ist, Vector2D &v1);               //allows to get vector from std::istream 
     double operator* (const Vector2D &v1);                                          //allows to multiplicate two vectors (scalar multiplication)
+    Vector2D operator* (const double &d1);                                          //allows to multiplicate vector with double
     Vector2D operator+ (const Vector2D &v1);                                        //allows to add two vectors
     Vector2D operator- (const Vector2D &v1);                                        //allows to subtract two vectors
     friend std::ofstream &operator<<(std::ofstream &ofst, const Vector2D &v1);      //allows to print vector in file

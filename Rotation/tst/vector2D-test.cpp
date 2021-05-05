@@ -20,7 +20,7 @@ TEST(TestVector, testCompare){
 
 TEST(TestVector, testCompareWithThreshold){
     Vector2D v1(2,4);
-    Vector2D v2(2.0000001,4.0000009);
+    Vector2D v2(2.00000000001,4.00000000009);
     EXPECT_TRUE (v1 == v2);
 }
 
@@ -72,10 +72,16 @@ TEST(TestVector, testGetVector){
     
 }
 
-TEST(TestVector, testMultiplication){
+TEST(TestVector, testMultiplicationByVec){
     Vector2D v1(2,3);
     Vector2D v2(1,1);
     EXPECT_EQ (v1*v2, 5);   
+}
+
+TEST(TestVector, testMultiplicationByDouble){
+    Vector2D v1(2,3);
+    double a = 3;
+    EXPECT_EQ (v1*a, Vector2D(6,9));   
 }
 
 TEST(TestVector, testAddVectors){

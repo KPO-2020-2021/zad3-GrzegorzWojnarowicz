@@ -66,6 +66,14 @@ double Vector2D::operator* (const Vector2D &v1){
     return (v1.x * x + v1.y * y);
 }
 
+Vector2D Vector2D::operator* (const double &d1){
+    Vector2D v1 = Vector2D(x,y);
+    v1.x = d1 * x;
+    v1.y = d1 * y;
+    return (v1);
+}
+
+
 Vector2D Vector2D::operator+ (const Vector2D &v1){
     return Vector2D((x+v1.x), (y+v1.y));
 }
